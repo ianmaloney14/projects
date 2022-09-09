@@ -8,4 +8,4 @@ class Post(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['date_added']
+        ordering = ['-date_added']
