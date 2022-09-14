@@ -1,10 +1,11 @@
 from tkinter import *
 
 root = Tk()
-
+root.title('XRP Wallet')
+# root.iconbitmap('C:/Users/ianmaloney/Desktop/code/projects/xrpl_wallet_python/gui/img/xrp-logo (1).ico')
 
 # Creating a Label Widget
-myLabel = Label(root, text="Enter your name!")
+myLabel = Label(root, text="Username")
 
 # Pack labels on screen
 myLabel.pack()
