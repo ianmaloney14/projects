@@ -72,25 +72,6 @@ class App(customtkinter.CTk):
         self.optionmenu_1.grid(row=10, column=0, pady=10, padx=20, sticky="w")
 
         # ============ frame_info ============
-
-        # configure grid layout (1x1)
-        # self.frame_info.rowconfigure(0, weight=1)
-        # self.frame_info.columnconfigure(0, weight=1)
-
-        # self.label_info_1 = customtkinter.CTkLabel(master=self.frame_info,
-        #                                            text="CTkLabel: Lorem ipsum dolor sit,\n" +
-        #                                                 "amet consetetur sadipscing elitr,\n" +
-        #                                                 "sed diam nonumy eirmod tempor" ,
-        #                                            height=100,
-        #                                            corner_radius=6,  # <- custom corner radius
-        #                                            fg_color=("white", "gray38"),  # <- custom tuple-color
-        #                                            justify=tkinter.LEFT)
-        # self.label_info_1.grid(column=0, row=0, sticky="nwe", padx=15, pady=15)
-
-        # self.progressbar = customtkinter.CTkProgressBar(master=self.frame_info)
-        # self.progressbar.grid(row=1, column=0, sticky="ew", padx=15, pady=15)
-
-        # set default values
         self.optionmenu_1.set("Dark")
 
     def button_event(self):
