@@ -1,4 +1,4 @@
-import tkinter
+from tkinter import *
 import tkinter.messagebox
 import customtkinter
 
