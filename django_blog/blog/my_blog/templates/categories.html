@@ -2,13 +2,14 @@
 
 
 {% block content %}
-<h1>Post</h1>
+
+{% if category_posts %}
+
+<h1>{{ categories }}</h1>
 <ul>
-{% for post in object_list %}
-  <li>
+{% for post in category_posts %}
+<li>
     <a href="{% url 'article-detail' post.pk %}"> {{ post.title }} </a> 
-    
-    - <a href="{% url 'category' post.category %}">{{ post.category }}</a>
     - {{ post.author.first_name }} 
     {{ post.author.last_name }} -
     {{ post.post_date }}
@@ -21,4 +22,11 @@
   </li>
 {% endfor %}
 </ul>
+
+{% else %}
+
+<h2>Sorry this page doesn't exist...</h2>
+
+{% endif %}
+
 {% endblock %}
