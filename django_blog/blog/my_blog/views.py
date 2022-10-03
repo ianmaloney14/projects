@@ -14,7 +14,7 @@ class HomeView(ListView):
 
 def CategoryView(request, categories):
     category_posts = Post.objects.filter(category=categories.replace(' ', '-'))
-    return render(request, 'categories.html', {'categories': categories.title().replace(' ', '-'), 'category_posts':category_posts})
+    return render(request, 'categories.html', {'categories': categories.title().replace('-', ' '), 'category_posts':category_posts})
 
 class ArticleDetailView(DetailView):
     model = Post
