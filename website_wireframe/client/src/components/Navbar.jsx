@@ -3,8 +3,17 @@ const Navbar = () => {
         <div>
             <nav>
                 <h1>Welcome</h1>
-                <button>Login</button>
-                <button>Create a free account</button>
+                <div>
+                    <ul>
+                        <li>Crypto News</li>
+                        <li>Guides</li>
+                        <li>NFTs</li>
+                    </ul>
+                </div>
+                <div>
+                    <button>Login</button>
+                    <button>Create a free account</button>
+                </div>
             </nav>
         </div>
     )
